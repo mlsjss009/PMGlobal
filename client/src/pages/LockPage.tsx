@@ -100,49 +100,10 @@ export default function LockPage({ onUnlock }: LockPageProps) {
           </Button>
         </form>
 
-        <div className="mt-6 flex justify-center">
-          <Button
-            type="button"
-            variant="outline"
-            className="bg-white/95 backdrop-blur-sm hover:bg-white"
-            onClick={() => setShowInstructions(true)}
-            data-testid="button-get-code"
-          >
-            <MessageSquare className="mr-2 h-5 w-5" />
-            Get Access Code via Telegram
-          </Button>
-        </div>
+    
       </div>
 
-      <AlertDialog open={showInstructions} onOpenChange={setShowInstructions}>
-        <AlertDialogContent className="max-w-md">
-          <AlertDialogHeader>
-            <AlertDialogTitle>Get Your Access Code</AlertDialogTitle>
-            <AlertDialogDescription className="space-y-4 text-left">
-              <div>
-                <p className="font-semibold mb-2">Follow these steps:</p>
-                <ol className="list-decimal list-inside space-y-2 text-sm">
-                  <li>Open Telegram and search for the portfolio bot</li>
-                  <li>Send <code className="bg-muted px-1 py-0.5 rounded">/start</code> to initialize the bot</li>
-                  <li>Send <code className="bg-muted px-1 py-0.5 rounded">/getpassword</code> to receive your access code</li>
-                  <li>Enter the code on this page to access the portfolio</li>
-                </ol>
-              </div>
-              <div className="bg-muted p-3 rounded-md text-sm">
-                <p className="font-semibold mb-1">📌 Important:</p>
-                <ul className="list-disc list-inside space-y-1 text-xs">
-                  <li>Each code can only be used once</li>
-                  <li>Codes expire after 24 hours</li>
-                  <li>Request a new code anytime via Telegram</li>
-                </ul>
-              </div>
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogAction data-testid="button-close-instructions">Got it</AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
+    
     </div>
   );
 }
