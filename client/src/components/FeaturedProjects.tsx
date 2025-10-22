@@ -3,7 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import project1 from "@assets/stock_images/professional_busines_524a9de1.jpg";
 import project2 from "@assets/stock_images/professional_busines_9928466c.jpg";
 import project3 from "@assets/stock_images/professional_busines_c28d5997.jpg";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 

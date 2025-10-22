@@ -24,7 +24,11 @@ export const insertUserSchema = createInsertSchema(users).pick({
 });
 
 export const selectUserSchema = createSelectSchema(users);
-export const insertPasswordSchema = createInsertSchema(passwords);
+export const insertPasswordSchema = createInsertSchema(passwords).omit({
+  id: true,
+  used: true,
+  createdAt: true,
+});
 export const selectPasswordSchema = createSelectSchema(passwords);
 
 export type User = typeof users.$inferSelect;

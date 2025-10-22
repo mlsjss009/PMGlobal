@@ -1,7 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 
 import heroImage1 from "@assets/stock_images/professional_busines_28fb5a4d.jpg";
 import heroImage2 from "@assets/stock_images/professional_busines_a5191988.jpg";
